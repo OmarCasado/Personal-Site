@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: 0.2s ease-in;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+h2 {
+    font-size: 2.1rem;
+}
+
+:root {
+    --white: rgb(240, 240, 240);
+    --red: rgb(188, 0, 45);
+    --ligt-gray: rgb(124, 130, 138);
+    --dark-gray: rgb(56, 58, 59) !important;
+    --background-color: rgb(240, 240, 232);
+    --green: rgb(43, 221, 153);
+}
+
+/*************************************** NAVIGATION BAR ***************************************/
+
+.navbar {
+    display: flex;
+    background-color: var(--dark-gray);
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    letter-spacing: 1px;
+}
+
+.profile-image {
+    width: 50px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    border: solid var(--red);
+    margin: 15px 0 15px 50px;
+}
+
+.profile-image:hover {
+    filter: grayscale(0);
+    
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white);
+    margin: 0;
+    padding: 25px;
+}
+
+.navbar-nav a:hover {
+    color: var(--red);
+}
+
+/*************************************** HERO SECTION ***************************************/
+
+
+.about-card {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-size: 1.2rem;
+    text-align: justify ;
+    padding: 60px 200px 40px 200px;
+}
+
+#about-image {
+    max-width: 400px;  
+    height: auto;  
+}
+
+
+
+/*************************************** FOOTER ***************************************/
+
+.footer {
+    display: flex;
+    background-color: var(--dark-gray);
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    font-size: 0.8rem;
+}
+
+.footer-name {
+    margin: 1.5rem 0 1.5rem 2.8rem;
+    color: var(--white);
+}
+
+.footer-list {
+    display: flex;
+    list-style: none;
+}
+
+.footer-list a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color:var(--white);
+    margin: 0;
+    padding: 1.5rem;
+}
+
+.footer-list a:hover {
+    color: var(--red);
+}
+
+.footer ul {
+    margin: 1.2rem;
+}
+
+.media-icon {
+    filter: invert();
+    width: 1.5rem;
+}
+
+.media-icon:hover {
+    filter: invert(30%) sepia(21%) saturate(4061%) hue-rotate(319deg) brightness(93%) contrast(101%);;
+}
+
+
+/*************************************** MEDIA QUERY ***************************************/
+
+
+@media (max-width: 1200px) {
+    .about-card {
+        flex-direction: column;
+        padding: 300px 80px 300px 80px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .navbar-nav li {
+        margin: 0.8rem;
+    }
+
+    .profile-image {
+        width: 70px;
+        border: solid var(--green);
+        margin: 0 0 0 40%;
+    }
+
+    .about-card {
+        flex-direction: column;
+        padding: 400px 40px 400px 40px;
+    }
+
+    .final-container p {
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+    }
+
+    .footer-name {
+        margin: 0 0 20px 0px;
+    }
+    
+    .media-icon {
+        width: 35px;
+    }
+    
+}
