@@ -28,3 +28,5 @@ function mouseOn() {
 function mouseOff() {
 document.querySelector(".final-container").style.backgroundImage =  " url('Images/Karesansui final background.jpg')";
 }
+
+
