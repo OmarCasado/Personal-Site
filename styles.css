@@ -244,6 +244,21 @@ h2 {
 
 /*************************************** MEDIA QUERY ***************************************/
 
+@media (max-width: 1890px){
+    .projects-grid {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .projects-section {
+        height: 100%;
+    }
+}
+
 @media (max-width: 600px) {
 
     .navbar-nav {
