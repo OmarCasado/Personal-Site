@@ -3,13 +3,6 @@
 
 // HERO SECTION BACKGROUND TRANSITIONS
 
-function mouseOver() {
-    document.getElementById("hero").style.backgroundImage = " url('../images/Karesansui\ background\ Architecture\ button.png')";
-}
-
-function mouseOut() {
-document.getElementById("hero").style.backgroundImage =  " url('../images/Karesansui\ Background.png')";
-}
 
 function mouseUp() {
     document.getElementById("hero").style.backgroundImage = " url('../images/Karesansui\ background\ Web-Dev\ button.png')";

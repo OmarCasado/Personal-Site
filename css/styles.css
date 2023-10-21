@@ -246,7 +246,7 @@ h2 {
 
 @media (max-width: 1890px){
     .projects-grid {
-        display: flex;
+        /* display: flex; */
         flex-wrap: wrap;
         padding-bottom: 30px;
         justify-content: center;
