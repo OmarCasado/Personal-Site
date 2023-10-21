@@ -74,7 +74,7 @@ h2 {
     align-items: center;
     height: 100vh;
     flex-direction: column;
-    background-image: url("Images/Karesansui\ Background.png");
+    background-image: url("images/Karesansui\ Background.png");
     background-size: cover;
     background-position: center;
 }
@@ -145,7 +145,7 @@ h2 {
 
 .project-card {
     height: 18rem;
-    width: 28rem;   
+    width: 28rem;
     border-radius: 10px;
     transition: 2s;
 }
@@ -189,7 +189,7 @@ h2 {
     align-items: center;
     height: 85vh;
     flex-direction: column;
-    background-image: url("Images/Karesansui\ final\ background.jpg");
+    background-image: url("images/Karesansui\ final\ background.jpg");
     background-size: cover;
     background-position: center;
 }

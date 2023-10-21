@@ -93,7 +93,7 @@ form {
     height: 100vh;
 }
 
-.form-div { 
+.form-div {
     margin: 0 auto 1.25rem auto;
     padding: 0.25rem;
 }
@@ -115,7 +115,6 @@ form {
 .input-control:focus {
     border: 2px solid var(--red);
 }
-    
 
 .input-textarea {
     min-height: 150px;

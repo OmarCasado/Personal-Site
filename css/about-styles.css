@@ -46,7 +46,6 @@ h2 {
 
 .profile-image:hover {
     filter: grayscale(0);
-    
 }
 
 .navbar-nav {
@@ -81,8 +80,8 @@ h2 {
 }
 
 #about-image {
-    max-width: 400px;  
-    height: auto;  
+    max-width: 400px;
+    height: auto;
 }
 
 
@@ -183,9 +182,8 @@ h2 {
     .footer-name {
         margin: 0 0 20px 0px;
     }
-    
+
     .media-icon {
         width: 35px;
     }
-    
 }
