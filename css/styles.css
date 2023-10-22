@@ -24,6 +24,10 @@ h2 {
     --green: rgb(43, 221, 153);
 }
 
+a {
+    text-decoration: none;
+}
+
 /*************************************** NAVIGATION BAR ***************************************/
 
 .navbar {
@@ -150,6 +154,7 @@ h2 {
     transition: 2s;
 }
 
+/*Set pointer events to block the mouse pointer so it doesn't obstruct the color transition of the project cards.*/
 .project-title {
     display: flex;
     font-size: 1.2rem;
@@ -157,9 +162,14 @@ h2 {
     position: relative;
     top: -160px;
     color: var(--white);
-    opacity: 0;
     transform: scale(0);
-    transition: 0.7s;
+    transition: 0.4s;
+    pointer-events: none;
+}
+
+.project-title h3 {
+    z-index: 100;
+    text-shadow: 1px 1px 1px var(--dark-gray);
 }
 
 .project-image:hover {
@@ -168,13 +178,12 @@ h2 {
 
 .project-card:hover {
     background-color: var(--red);
-    }
+}
 
 .project-card:hover .project-title {
     opacity: 1;
     transform: scale(1);
 }
-
 
 /*************************************** FINAL SECTION ***************************************/
 
