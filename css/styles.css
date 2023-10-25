@@ -52,15 +52,13 @@ a {
     letter-spacing: 1px;
 }
 
-.profile-image {
+.logo {
     width: 50px;
-    border-radius: 50%;
     filter: grayscale(100%);
-    border: solid var(--blue);
     margin: 15px 0 15px 50px;
 }
 
-.profile-image:hover {
+.logo:hover {
     filter: grayscale(0);
 }
 
@@ -179,9 +177,9 @@ a {
 /*************************************** PROJECTS SECTION ***************************************/
 
 .projects-section {
-    background-color: var(--dark-gray);
     height: 100vh;
     width: 100%;
+    background-color: var(--transparent-white);
 }
 
 .projects-section h2 {
@@ -336,9 +334,8 @@ a {
         margin: 0.8rem;
     }
 
-    .profile-image {
+    .logo {
         width: 70px;
-        border: solid var(--green);
         margin: 0 0 0 40%;
     }
     

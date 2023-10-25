@@ -1,0 +1,24 @@
+:root {
+    --white: rgb(240, 240, 240);
+    --transparent-white: rgba(240, 240, 240, 0.407);
+    --red: rgb(188, 0, 45);
+    --ligt-gray: rgb(124, 130, 138);
+    --dark-gray: rgb(56, 58, 59) !important;
+    --background-color: rgb(240, 240, 232);
+    --green: rgb(43, 221, 153);
+    --blue: rgb(28, 180, 221);
+}
+
+
+/*************************************** SKILLS SECTION ***************************************/
+
+
+.skills-container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+

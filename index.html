@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omar Casado</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/about-styles.css">
+    <link rel="stylesheet" href="css/skills-styles.css">
+    <link rel="stylesheet" href="css/contact-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
@@ -14,17 +17,18 @@
 
 <!--NAVIGATION BAR-->
 
-
     <header>
         <nav class="navigation-bar navbar">
-            <a href="index.html">
-                <img class="profile-image" src="images/omarc.jpg" alt="Omar's profile picture">
+            <a href="#">
+                <img class="logo" src="images/logo.png" alt="Omar's profile picture">
             </a>
 
             <ul class="navigation-list navbar-nav">
-                <li><a href="about/about.html" target="_blank">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="contact/contact.html">Contact</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#projects-section">Projects</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+                <li><a href="#">Resume</a></li>
+
             </ul>
         </nav>
     </header>
@@ -50,6 +54,36 @@
         <img src="images/codeImage.png" alt="Code screenshot" id="codeImage">
     </div>
 
+
+    <!--ABOUT SECTION-->
+
+    <section id="about-section">
+        <img id="about-image" src="images/OP C.jpg" alt="Omar Casado Photo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius 
+            scelerisque elementum. Aliquam imperdiet urna nisl, a mollis nisl auctor eget.
+            Nulla facilisi. Mauris et tincidunt felis. Nullam pharetra accumsan egestas. 
+            Aliquam scelerisque semper tortor, ut malesuada libero iaculis non. Praesent 
+            tempor diam non malesuada fringilla. <br>
+            Vestibulum placerat, turpis ac finibus aliquet, arcu urna bibendum erat, sit amet 
+            consectetur diam libero in neque. Vivamus quis purus euismod est viverra bibendum 
+            ac id risus. Nullam ornare sollicitudin tristique. Nullam eu orci tortor. In luctus 
+            sem accumsan lacinia convallis. In faucibus eros sed massa dignissim, sed sollicitudin 
+            est dapibus. Ut placerat arcu vitae mi convallis, vel porttitor tortor mollis. 
+            Etiam consequat vel massa at dignissim. Mauris eget tellus vel risus suscipit 
+            ullamcorper nec sed nisl. Duis consequat ultricies tortor eu pharetra. <br>
+            Pellentesque et dui in quam molestie pellentesque. Cras nunc lorem, imperdiet 
+            nec hendrerit et, imperdiet convallis magna.
+        </p>
+    </section>
+
+
+    <!--SKILLS SECTION-->
+
+
+    <div class="skills-container">
+        <h2>My Skills</h2>
+        <p>I'm open to web design and development. <br> Please don't hesitate to contact me.</p>
+    </div>
 
 
 <!--PROJECTS SECTION-->
@@ -94,6 +128,58 @@
     </div>
 </section>
 
+
+    <!--CONTACT SECTION-->
+
+    <section id="contact-section">
+<section id="form-container">
+
+    <h1 class="section-title">Let's talk!</h1>
+
+
+        <form id="survey-form">
+
+            <div class="form-div">
+                <input id="name" type="text" class="input-control" placeholder="Name" required>
+            </div>
+
+            <div class="form-div">
+                <input id="email" type="email" class="input-control" placeholder="Email" required>
+            </div>
+
+
+                <div class="form-div">
+                    <textarea placeholder="What's up?" class="input-textarea"></textarea>
+                </div>
+
+            <div>
+                <button type="submit" id="submit" class="submit-button">
+                Send
+                </button>
+            </div>
+        </form>
+    </section>
+
+    <section id="info-container">
+
+        <ul>
+            <li> <img class="container-icon" src="../icons/geo-alt.svg" alt=""> City, State</li>
+            <li><img class="container-icon" src="../icons/phone.svg" alt=""> 080-1234-5678</li>
+            <li><img class="container-icon" src="../icons/envelope.svg" alt=""> omarcasado27@hotmail.com</li>
+        </ul>
+
+        <hr>
+
+        <ul class="media-list">
+            <li><a href="#" mailto="omarcasado27@hotmail.com"> <img class="info-icon" src="icons/envelope-at.svg" alt=""> </a></li>
+            <li><a href="www.linkedin.com/in/omar-casado" target="_blank"> <img class="info-icon" src="icons/linkedin.svg" alt=""> </a></li>
+            <li><a href="#" target="_blank"> <img class="info-icon"  src="icons/github.svg" alt=""> </a></li>
+        </ul>
+
+    </section>
+    </section>
+
+
 <!--FINAL SECTION-->
 
 
@@ -121,6 +207,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 <script src="javascript/index.js"></script>
+<script src="javascript/contact.js"></script>
 
 </body>
 </html>
