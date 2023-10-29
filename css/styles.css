@@ -9,6 +9,7 @@ html {
     scroll-behavior: smooth;
     font-size: 100%;
     /* font-size: 62.5%; */
+    backdrop-filter: blur(10px);
 }
 
 body {
@@ -27,12 +28,7 @@ h2 {
 :root {
     --white: rgb(240, 240, 240);
     --transparent-white: rgba(240, 240, 240, 0.407);
-    --red: rgb(188, 0, 45);
-    --ligt-gray: rgb(124, 130, 138);
-    --dark-gray: rgb(56, 58, 59) !important;
-    --background-color: rgb(240, 240, 232);
-    --green: rgb(43, 221, 153);
-    --blue: rgb(28, 180, 221);
+    --blue: #1cb4dd;
 }
 
 a {
@@ -54,12 +50,19 @@ a {
 
 .logo {
     width: 50px;
-    filter: grayscale(100%);
     margin: 15px 0 15px 50px;
 }
 
 .logo:hover {
-    filter: grayscale(0);
+    animation: logo-rotation 0.3s linear infinite;
+}
+
+@keyframes logo-rotation {
+    0%{
+        transform: rotate(0deg);}
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 .navbar-nav {
@@ -90,36 +93,34 @@ a {
 }
 
 .hero-container h1 {
-    font-size: 14rem;
-    line-height: 12rem;
+    font-size: 10rem;
+    line-height: 8rem;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
-#hero-column {
+.hero-column {
     display: flex;
     flex-direction: column;
     color: var(--white);
     text-align: center;
     align-items: center;
-    margin-top: 45px;
 }
 
-.heading-description p {
+.hero-description {
     font-size: 1.2rem;
+    line-height: 2rem;
 }
 
-.heading-description {
-    display: flex;
-    text-align: left;
-    justify-content: center;
-    align-items: center;
+.hero-description span {
+    color: var(--blue);
 }
 
 .heading-line {
     color: rgba(172, 176, 183, 0.5);
     font-size: 2.5rem;
     line-height: 2.5rem;
+    text-align: left;
 }
 
 #codeImage {
@@ -131,14 +132,14 @@ a {
 .heading-animation
 {
     background-image: linear-gradient(to right,
-    rgba(240, 240, 240, 0.036) 20%,
-    rgba(172, 176, 183, 0.5) 40%,
-    rgba(172, 176, 183, 0.5)  60%,
-    rgba(240, 240, 240, 0.036) 80%);
+    rgba(240, 240, 240, 0.1) 20%,
+    rgba(222, 226, 232, 0.5) 40%,
+    rgba(222, 226, 232, 0.5)  60%,
+    rgba(240, 240, 240, 0.1) 80%);
     background-size: 200% auto;
     color: var(--white);
     background-clip: text;
-    text-fill-color: transparent;
+    /* text-fill-color: transparent; */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: h1-animation 15s linear infinite;
@@ -173,16 +174,23 @@ a {
     box-shadow: 0 2.5px 10px 0 var(--ligt-gray);
 }
 
+#arrow-down {
+    position: absolute;
+    bottom: 0;
+}
+
 
 /*************************************** PROJECTS SECTION ***************************************/
 
-.projects-section {
+#projects-section {
     height: 100vh;
     width: 100%;
-    background-color: var(--transparent-white);
+    /* background-color: var(--transparent-white); */
+    border-top: 2px solid var(--white);
+    border-bottom: 2px solid var(--white);
 }
 
-.projects-section h2 {
+#projects-section h2 {
     color: var(--white);
     display: flex;
     justify-content: center;
@@ -193,7 +201,7 @@ a {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 28rem 28rem 28rem;
+    grid-template-columns: 30% 30% 30%;
     gap: 1.5rem;
 }
 
@@ -211,6 +219,7 @@ a {
     border-radius: 10px;
     transition: 2s;
 }
+
 
 /*Set pointer events to block the mouse pointer so it doesn't obstruct the color transition of the project cards.*/
 .project-title {
@@ -232,31 +241,20 @@ a {
 
 .project-image:hover {
     filter: opacity(25%);
+    box-shadow: 2px 2px 2px 2px var(--dark-gray);
+    scale: 1.05;
 }
 
-.project-card:hover {
+/* .project-card:hover {
     background-color: var(--blue);
-}
+} */
 
 .project-card:hover .project-title {
     opacity: 1;
     transform: scale(1);
 }
 
-/*************************************** FINAL SECTION ***************************************/
 
-.final-container p {
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-.final-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 85vh;
-    flex-direction: column;
-}
 
 /*************************************** FOOTER ***************************************/
 

@@ -1,33 +1,49 @@
-:root {
-    --white: rgb(240, 240, 240);
-    --transparent-white: rgba(240, 240, 240, 0.407);
-    --red: rgb(188, 0, 45);
-    --ligt-gray: rgb(124, 130, 138);
-    --dark-gray: rgb(56, 58, 59) !important;
-    --background-color: rgb(240, 240, 232);
-    --green: rgb(43, 221, 153);
-    --blue: rgb(28, 180, 221);
-}
-
 
 /*************************************** ABOUT SECTION ***************************************/
 
 
 #about-section {
+    color: var(--white);
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 50px;
     font-size: 1.2rem;
     text-align: justify;
-    padding: 60px 200px 40px 200px;
-    background-color: var(--transparent-white);
+    padding: 60px 200px 40px 150px;
+    position: relative;
+}
+
+#about-text {
+    margin-bottom: 8rem;
+}
+
+#about-text h2 {
+    margin-bottom: 1rem;
+}
+
+
+#background-color {
+    /* background-color: var(--transparent-white); */
+    border-radius: 0 50px 50px 0;
+    width: 90%;
+    height: 70%;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    bottom: calc(20rem / 2);
+    border-top: 2px solid var(--white);
+    border-right: 2px solid var(--white);
+    border-bottom: 2px solid var(--white);
+
 }
 
 #about-image {
     max-width: 400px;
     height: auto;
+    border-radius: 50%;
+    margin-bottom: 8rem;
 }
 
 

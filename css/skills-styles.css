@@ -1,24 +1,51 @@
-:root {
-    --white: rgb(240, 240, 240);
-    --transparent-white: rgba(240, 240, 240, 0.407);
-    --red: rgb(188, 0, 45);
-    --ligt-gray: rgb(124, 130, 138);
-    --dark-gray: rgb(56, 58, 59) !important;
-    --background-color: rgb(240, 240, 232);
-    --green: rgb(43, 221, 153);
-    --blue: rgb(28, 180, 221);
-}
-
 
 /*************************************** SKILLS SECTION ***************************************/
 
 
-.skills-container {
+#toolbox-section {
     display: flex;
+    flex-direction: column;
     height: 100vh;
     justify-content: center;
     align-items: center;
+    color: var(--white);
+    position: relative;
 }
 
+#toolbox-title {
+    margin-bottom: 2rem;
+    position: absolute;
+    top: 5rem;
+}
+
+.toolbox-grid {
+    width: 80%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10%;
+    gap: 3rem;
+    position: absolute;
+    top: 14rem;
+}
+
+.tool-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    width: 7rem;
+}
+
+#toolbox-background-color{
+    /* background-color: var(--transparent-white); */
+    border-radius: 50px;
+    width: 80%;
+    height: 55%;
+    z-index: -1;
+    position: absolute;
+    margin: 0 auto;
+    box-shadow: 2px 2px 2px  black;
+    border: 2px solid var(--white);
+}
 
 
