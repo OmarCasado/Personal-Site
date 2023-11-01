@@ -1,24 +1,22 @@
 
+/////////////////////////////////// TOGGLE MENU ////////////////////////////////////////////
 
+let toggle = document.getElementById('toggle');
 
-// // HERO SECTION BACKGROUND TRANSITIONS
+// toggleClass
+function toggleClass(element, className) {
+  if (element.classList.contains(className)) {
+    element.classList.remove(className);
+  } else {
+    element.classList.add(className);
+  }
+}
 
-// function mouseUp() {
-//     document.getElementById("hero").style.backgroundImage = " url('images/Karesansui\ background\ Web-Dev\ button.png')";
-// }
+toggle.onclick = function() {
+  toggleClass(this, 'on');
+  // Toggle open class which sets a with of 300px for the navigation side bar (departs from 0)
+  toggleClass(document.getElementById('navigation-list'), 'open');
+}
 
-// function mouseDown() {
-// document.getElementById("hero").style.backgroundImage =  " url('images/Karesansui\ Background.png')";
-// }
-
-// // FINAL SECTION BACKGROUND TRANSITIONS
-
-// function mouseOn() {
-//     document.querySelector(".final-container").style.backgroundImage = " url('images/Karesansui final background Reach-Out button.png')";
-// }
-
-// function mouseOff() {
-// document.querySelector(".final-container").style.backgroundImage =  " url('images/Karesansui final background.jpg')";
-// }
 
 

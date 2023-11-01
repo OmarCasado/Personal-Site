@@ -15,7 +15,9 @@ html {
 body {
     height: 100vh;
     width: 100%;
+    overflow-x: hidden;
     background-image: url("../images/main-background.jpg"), url("../images/main-background_projectTile_m.png");
+    /* background: linear-gradient(45deg, rgb(14, 14, 14), rgb(40, 40, 40)); */
     background-position: center, center;
     background-size: cover, cover;
     background-attachment: fixed, fixed;
@@ -26,9 +28,9 @@ h2 {
 }
 
 :root {
-    --white: rgb(240, 240, 240);
+    --white: rgb(219, 226, 239);
     --transparent-white: rgba(240, 240, 240, 0.407);
-    --blue: #1cb4dd;
+    --blue: rgb(28, 180, 221);
 }
 
 a {
@@ -65,12 +67,12 @@ a {
     }
 }
 
-.navbar-nav {
+#navigation-list {
     display: flex;
     list-style: none;
 }
 
-.navbar-nav a {
+#navigation-list a {
     text-transform: uppercase;
     text-decoration: none;
     color: var(--white);
@@ -78,8 +80,64 @@ a {
     padding: 25px;
 }
 
-.navbar-nav a:hover {
+#navigation-list a:hover {
     color: var(--blue);
+}
+
+/*************************************** TOGGLE MENU ***************************************/
+
+#toggle {
+    display: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 2.2rem;
+    top: 2.2rem;
+    z-index: 10;
+}
+
+#toggle span:after,
+#toggle span:before {
+    content: ""; /*??*/
+    position: absolute;
+    top: -9px; /*??*/
+}
+
+#toggle span:after { /*??*/
+    top: 9px;
+}
+
+#toggle span {
+    display: block;
+}
+
+#toggle span,
+#toggle span:after,
+#toggle span:before {
+    width: 100%;
+    height:4px;
+    background-color: var(--white);
+    transition: all 0.2s; /*??*/
+    backface-visibility: hidden; /*??*/
+}
+
+    /* WHEN CLICKED  */
+#toggle.on span {
+    background-color: transparent;
+}
+
+#toggle.on span:before {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#toggle.on span:after {
+    transform: rotate(-45deg) translate(7px, -8px);
+}
+
+#toggle.on + #navigation-list { /*??*/
+    opacity: 1;
+    visibility: visible;
 }
 
 /*************************************** HERO SECTION ***************************************/
@@ -128,29 +186,32 @@ a {
     margin-top: 50px;
 }
 
+.heading-name {
+    color:#DBE2EF;
+}
 
-.heading-animation
+
+/* .heading-name
 {
     background-image: linear-gradient(to right,
-    rgba(240, 240, 240, 0.1) 20%,
+    rgba(222, 226, 232, 1) 20%,
     rgba(222, 226, 232, 0.5) 40%,
     rgba(222, 226, 232, 0.5)  60%,
-    rgba(240, 240, 240, 0.1) 80%);
+    rgba(222, 226, 232, 1) 80%);
     background-size: 200% auto;
     color: var(--white);
     background-clip: text;
     /* text-fill-color: transparent; */
-    -webkit-background-clip: text;
+   /* -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: h1-animation 15s linear infinite;
+}*/
 
-}
-
-@keyframes h1-animation {
+/* @keyframes h1-animation {
     to {
     background-position: 200% center;
     }
-}
+} */
 
 
 .button-container {
@@ -321,26 +382,65 @@ a {
     }
 }
 
-@media (max-width: 600px) {
 
-    .navbar-nav {
+@media (max-width: 1024px){
+
+    .hero-container{
         flex-direction: column;
-        align-items: flex-end;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #toggle {
+        display: block;
     }
 
-    .navbar-nav li {
-        margin: 0.8rem;
+    #navigation-list {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 0;
+        height: 100vh;
+        position: fixed;
+        top: 5rem;
+        right: 0;
+        backdrop-filter: blur(40px);
+        border: 2px solid var(--white);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
     }
 
-    .logo {
-        width: 70px;
-        margin: 0 0 0 40%;
+    #navigation-list.open {
+        width: 300px;
     }
-    
+
+    #navigation-list li {
+        width: 100%;
+        line-height: 2.5rem;
+        border-bottom: 1px solid var(--white);
+    }
+
+    #navigation-list li a {
+        text-align: left;
+        display: block;
+        width: 100%;
+    }
+
+    #navigation-list li:hover {
+        background-color: var(--blue);
+    }
+
+    #navigation-list a:hover {
+        color: var(--white);
+    }
+
     .hero-container h1 {
-        font-size: 4rem;
+        font-size: 7rem;
+        line-height: 7rem;
     }
-    
+
     .hero-container p {
         font-size: 1.2rem;
     }
@@ -356,7 +456,7 @@ a {
         background-color: var(--dark-gray);
         height: 100%;
     }
-    
+
     .projects-grid {
         display: flex;
         justify-content: center;
@@ -381,10 +481,10 @@ a {
     .footer-name {
         margin: 0 0 20px 0px;
     }
-    
+
     .media-icon {
         width: 35px;
     }
-    
 }
+
 
