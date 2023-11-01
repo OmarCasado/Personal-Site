@@ -10,6 +10,7 @@ html {
     font-size: 100%;
     /* font-size: 62.5%; */
     backdrop-filter: blur(10px);
+    overflow-x: hidden;
 }
 
 body {
@@ -39,7 +40,7 @@ a {
 
 /*************************************** NAVIGATION BAR ***************************************/
 
-.navbar {
+.navigation-bar {
     display: flex;
     /* background-color: var(--dark-gray); */
     justify-content: space-between;
@@ -410,6 +411,7 @@ a {
         opacity: 0;
         visibility: hidden;
         transition: all 0.5s;
+        box-shadow: 2px 2px 25px 2px black;
     }
 
     #navigation-list.open {
@@ -437,8 +439,8 @@ a {
     }
 
     .hero-container h1 {
-        font-size: 7rem;
-        line-height: 7rem;
+        font-size: 6rem;
+        line-height: 6rem;
     }
 
     .hero-container p {
