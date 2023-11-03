@@ -13,9 +13,9 @@
 }
 
 #toolbox-title {
-    margin-bottom: 2rem;
     position: absolute;
     top: 5rem;
+    text-align: center;
 }
 
 .toolbox-grid {
@@ -23,10 +23,8 @@
     display: grid;
     justify-content: center;
     align-content: center;
-    grid-template-columns: 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-columns: repeat(7, 10%);
     gap: 2rem;
-    position: absolute;
-    top: 14rem;
 }
 
 .tool-wrapper {
@@ -35,7 +33,7 @@
     text-align: center;
     justify-content: center;
     align-content: center;
-    width: 7rem;
+    /* width: 7rem; */
 }
 
 #toolbox-background-color{
@@ -52,33 +50,28 @@
 
 @media (max-width: 1024px) {
 
-    .toolbox-grid {
-        width: 90%;
-        grid-template-columns: 10% 10% 10% 10% 10% 10% 10%;
-        gap: 2rem;
-    }
-
-    .tool-wrapper {
-        width: 5rem;
-    }
-
     #toolbox-background-color{
         width: 90%;
         height: 55%;
     }
-
 }
 
 @media (max-width: 768px) {
-    .toolbox-grid {
-        width: 70%;
-        grid-template-columns: 10% 10% 10% 10% 10%;
-        gap: 4rem;
-        margin: 0 auto;
+
+    .tool-wrapper img {
+        width: 5rem;
+        align-self: center;
     }
 
-    .tool-wrapper {
-        width: 4rem;
+    #toolbox-section {
+        height: 130vh;
+    }
+
+    .toolbox-grid {
+        /* width: 70%; */
+        margin-top: 100px;
+        grid-template-columns: repeat(3, 20%);
+        gap: 2rem;
     }
 
     #toolbox-background-color{

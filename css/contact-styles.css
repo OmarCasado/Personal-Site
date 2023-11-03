@@ -98,5 +98,40 @@
 
 .button-container a:hover {
     background-color: var(--blue);
-    box-shadow: 0 2.5px 10px 0 var(--ligt-gray);
+    box-shadow: 0 2.5px 10px 0 var(--blue);
+}
+
+.button {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    border: 2px solid var(--transparent-white);
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    color: var(--white);
+    background-color: transparent;
+}
+
+.button:hover {
+    background-color: var(--blue);
+    box-shadow: 0 2.5px 10px 0 var(--blue);
+}
+
+@media (max-width: 1024px) {
+
+    #contact-section {
+        height: 160vh;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    #form-container {
+        width: 90%;
+    }
+
+    .invitation {
+        height: 70vh;
+        width: 90%;
+    }
+
 }
