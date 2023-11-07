@@ -63,6 +63,11 @@
         align-self: center;
     }
 
+    #toolbox-title {
+        width: 90%;
+    }
+
+
     #toolbox-section {
         height: 130vh;
     }
