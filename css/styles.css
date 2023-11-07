@@ -216,6 +216,24 @@ a {
     bottom: 0;
 }
 
+#hero-glass {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(120px);
+    z-index: -1;
+}
+
+#hero-blur {
+    position: absolute;
+    left: 15%;
+    width: 500px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: linear-gradient( var(--blue), var(--white));
+    z-index: -2;
+}
+
 
 /*************************************** PROJECTS SECTION ***************************************/
 
