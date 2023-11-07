@@ -492,4 +492,11 @@ a {
     .media-icon {
         width: 35px;
     }
+
+    #hero-blur {
+        position: absolute;
+        left: 15%;
+        width: 75%;
+        height: 30%;
+    }
 }
