@@ -494,7 +494,7 @@ a {
     }
 
     #hero-blur {
-        width: 100vw;
+        width: 50vw;
         height: 30vh;
         position: absolute;
         left: 0;
