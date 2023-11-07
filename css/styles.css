@@ -355,10 +355,6 @@ a {
         flex-direction: column;
     }
 
-    #navigation-list {
-        backdrop-filter: blur(40px);
-    }
-
 }
 
 @media (max-width: 930px){
@@ -379,6 +375,18 @@ a {
     .project-image {
         height: 10rem;
     }
+
+    .button-container a {
+        border: 2px solid var(--blue);
+        color: var(--blue);
+    }
+
+    .button-container a:hover {
+        background-color: var(--white);
+        color: var(--white);
+    }
+
+
 
 }
 
