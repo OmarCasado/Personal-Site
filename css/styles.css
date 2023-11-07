@@ -367,6 +367,7 @@ a {
 .media-icon:hover {
     filter: invert(63%) sepia(58%) saturate(568%) hue-rotate(151deg) brightness(83%) contrast(111%);
     scale: 1.2;
+}
 
 
 /*************************************** MEDIA QUERY ***************************************/
@@ -484,5 +485,3 @@ a {
         width: 35px;
     }
 }
-
-
