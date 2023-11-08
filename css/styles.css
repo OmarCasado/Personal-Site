@@ -32,6 +32,7 @@ h2 {
     --transparent-white: rgba(240, 240, 240, 0.407);
     --blue: rgb(28, 180, 222);
     --green: rgb(73, 213, 156);
+    --dark: rgb(14, 14, 14);
 }
 
 a {
@@ -363,6 +364,28 @@ a {
     scale: 1.2;
 }
 
+
+/*************************************** SCROLL BAR ***************************************/
+
+
+::-webkit-scrollbar {
+    width: 16px;
+    background-color:var(--dark);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+    background-color: var(--blue);
+    /* box-shadow:0 -100vh 0 100vh var(--white); */
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: var(--dark);
+    border: 1px solid var(--transparent-white);
+}
 
 /*************************************** MEDIA QUERY ***************************************/
 
