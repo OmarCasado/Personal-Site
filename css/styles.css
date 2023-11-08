@@ -493,6 +493,10 @@ a {
         width: 35px;
     }
 
+    #hero-glass {
+        height: 100vh;
+    }
+
     #hero-blur {
         width: 50vw;
         height: 30vh;
