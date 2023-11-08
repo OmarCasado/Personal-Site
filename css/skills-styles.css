@@ -18,6 +18,10 @@
     text-align: center;
 }
 
+#toolbox-title h2 {
+    margin-bottom: 0.5rem;
+}
+
 .toolbox-grid {
     width: 80%;
     display: grid;
@@ -34,6 +38,10 @@
     justify-content: center;
     align-content: center;
     /* width: 7rem; */
+}
+
+.tool-wrapper p {
+    font-size: 0.9rem;
 }
 
 #toolbox-background-color{

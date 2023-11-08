@@ -19,4 +19,6 @@ toggle.onclick = function() {
 }
 
 
+//////////////////////////////// TOGGLE SELECTION LIST /////////////////////////////////////////
 
+// let resumeLanguage = document.getElementById("resume");
