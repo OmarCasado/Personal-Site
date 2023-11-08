@@ -69,12 +69,12 @@
 
 
     #toolbox-section {
-        height: 110vh;
+        height: 130vh;
     }
 
     .toolbox-grid {
         /* width: 70%; */
-        margin-top: 90px;
+        margin-top: 110px;
         grid-template-columns: repeat(3, 20%);
         gap: 2rem;
     }
