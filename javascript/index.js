@@ -27,3 +27,26 @@ toggle.onclick = function() {
 // pdfToggle.onclick = function() {
 //   toggleClass(architecturePdf, "toggle-pdf");
 // }
+
+//////////////////////////////// ANIMATION ON SCROLL /////////////////////////////////////////
+
+
+function scrollAnimation(hiddenClassName, revealClassName) {
+  let hiddenElements = document.querySelectorAll(hiddenClassName);
+
+let observer = new IntersectionObserver( function (entries) {
+  entries.forEach(function (entry) {
+    if(entry.isIntersecting) {
+      entry.target.classList.add(revealClassName);
+    } else {
+      entry.target.classList.remove(revealClassName);
+    }
+  });
+});
+
+hiddenElements.forEach((el) => observer.observe(el));
+}
+
+scrollAnimation(".hidden", "reveal");
+scrollAnimation(".hiddenAtBottom", "revealFromBottom");
+scrollAnimation(".hiddenAtRight", "revealFromRight");

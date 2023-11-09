@@ -445,6 +445,52 @@ a {
     border: 1px solid var(--transparent-white);
 }
 
+/************************************ OVERALL TRANSITIONS ************************************/
+
+
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-50%);
+    transition: all 2s;
+}
+
+.reveal {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.hiddenAtBottom {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(50%);
+    transition: all 2s;
+}
+
+.revealFromBottom {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.hiddenAtRight {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(50%);
+    transition: all 2s;
+}
+
+.revealFromRight {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+
+
 /*************************************** MEDIA QUERY ***************************************/
 
 
