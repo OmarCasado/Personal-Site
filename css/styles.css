@@ -453,7 +453,7 @@ a {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-50%);
-    transition: all 2s;
+    transition: all 1s;
 }
 
 .reveal {
@@ -466,7 +466,7 @@ a {
     opacity: 0;
     filter: blur(5px);
     transform: translateY(50%);
-    transition: all 2s;
+    transition: all 1s;
 }
 
 .revealFromBottom {
@@ -479,7 +479,7 @@ a {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(50%);
-    transition: all 2s;
+    transition: all 1s;
 }
 
 .revealFromRight {
