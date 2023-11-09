@@ -19,6 +19,11 @@ toggle.onclick = function() {
 }
 
 
-//////////////////////////////// TOGGLE SELECTION LIST /////////////////////////////////////////
+//////////////////////////////// TOGGLE PDF /////////////////////////////////////////
 
-// let resumeLanguage = document.getElementById("resume");
+// let pdfToggle = document.getElementById("architecture-portfolio");
+// let architecturePdf = document.getElementById("pdf");
+
+// pdfToggle.onclick = function() {
+//   toggleClass(architecturePdf, "toggle-pdf");
+// }

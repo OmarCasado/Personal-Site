@@ -110,6 +110,10 @@ a {
     top: 5rem;
 }
 
+#selection-list.off{
+    display: none;
+}
+
 #selection-list a {
     text-transform: uppercase;
     text-decoration: none;
@@ -207,7 +211,7 @@ a {
 }
 
 .heading-line {
-    color: rgba(172, 176, 183, 0.5);
+    color: var(--white);
     font-size: 2.5rem;
     line-height: 2.5rem;
     text-align: left;
@@ -311,6 +315,30 @@ a {
     object-fit: cover;
     filter: brightness(110%);
 }
+
+/*************************************** PDF SECTION ***************************************/
+
+/* #pdf {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    backdrop-filter: blur(20px);
+    z-index: 1;
+} */
+
+/* #pdf_content {
+    width: 100%;
+    height: 80vh; */
+    /* pointer-events: none; */
+/* } */
+
+/* #pdf.toggle-pdf {
+    display: none;
+} */
+
 
 
 /*Set pointer events to block the mouse pointer so it doesn't obstruct the color transition of the project cards.*/
@@ -506,6 +534,18 @@ a {
 
     #navigation-list a:hover {
         color: var(--white);
+    }
+
+    #selection-list {
+        text-align: left;
+        position: absolute;
+        right: 200px;
+        top: 35rem;
+    }
+
+    #selection-list a {
+        display: block;
+        margin-bottom: 1rem;
     }
 
     .hero-container h1 {
