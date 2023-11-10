@@ -13,7 +13,7 @@
 
 #toolbox-title {
     position: absolute;
-    top: 2rem;
+    top: 3rem;
     text-align: center;
 }
 
@@ -37,7 +37,6 @@
     text-align: center;
     justify-content: center;
     align-content: center;
-    /* width: 7rem; */
 }
 
 .tool-wrapper p {
@@ -97,7 +96,7 @@
 
 
     #toolbox-section {
-        height: 140vh;
+        height: 135vh;
     }
 
     .toolbox-grid {

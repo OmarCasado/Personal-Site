@@ -1,3 +1,4 @@
+"use strict";
 
 document.addEventListener('DOMContentLoaded', function() {
     var nameInput = document.getElementById('name');

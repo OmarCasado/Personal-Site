@@ -514,7 +514,7 @@ a {
 @media (max-width: 930px) {
 
     #projects-section {
-        height: 135vh;
+        height: 115vh;
     }
 
     .project-card {
@@ -538,6 +538,12 @@ a {
     .button-container a:hover {
         background-color: var(--white);
         color: var(--white);
+    }
+
+    .invisible {
+        display: none;
+        width: 0;
+        height: 0;
     }
 
 }
