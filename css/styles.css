@@ -9,7 +9,6 @@ html {
     scroll-behavior: smooth;
     font-size: 100%;
     backdrop-filter: blur(10px);
-    overflow-x: hidden;
 }
 
 body {
@@ -20,6 +19,7 @@ body {
     background-position: center, center;
     background-size: cover, cover;
     background-attachment: fixed, fixed;
+    overflow-x: hidden;
 }
 
 h1 {
