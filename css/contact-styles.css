@@ -67,7 +67,6 @@
 
 .input-control:focus {
     border: 2px solid var(--blue);
-    scale: 1.1;
 }
 
 .input-textarea {
@@ -86,7 +85,6 @@
 
 .input-textarea:focus {
     border: 2px solid var(--blue);
-    scale: 1.1;
 }
 
 .button-container {
@@ -163,13 +161,5 @@
         left: 0;
         right: 0;
         margin: 0 auto;
-    }
-
-    .input-control:focus {
-        scale: unset;
-    }
-
-    .input-textarea:focus {
-        scale: unset;
     }
 }
