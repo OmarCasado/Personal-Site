@@ -361,6 +361,13 @@ a {
     pointer-events: none;
 }
 
+.arch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .project-title h3 {
     z-index: 100;
     text-shadow: 1px 1px 1px var(--dark-gray);
