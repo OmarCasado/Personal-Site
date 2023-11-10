@@ -76,9 +76,11 @@ a {
 }
 
 @keyframes logo-rotation {
-    0%{
-        transform: rotate(0deg);}
-    100%{
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
         transform: rotate(360deg);
     }
 }
@@ -110,7 +112,7 @@ a {
     top: 5rem;
 }
 
-#selection-list.off{
+#selection-list.off {
     display: none;
 }
 
@@ -143,12 +145,15 @@ a {
 
 #toggle span:after,
 #toggle span:before {
-    content: ""; /*??*/
+    content: "";
+    /*??*/
     position: absolute;
-    top: -9px; /*??*/
+    top: -9px;
+    /*??*/
 }
 
-#toggle span:after { /*??*/
+#toggle span:after {
+    /*??*/
     top: 9px;
 }
 
@@ -160,13 +165,15 @@ a {
 #toggle span:after,
 #toggle span:before {
     width: 100%;
-    height:4px;
+    height: 4px;
     background-color: var(--white);
-    transition: all 0.2s; /*??*/
-    backface-visibility: hidden; /*??*/
+    transition: all 0.2s;
+    /*??*/
+    backface-visibility: hidden;
+    /*??*/
 }
 
-    /* WHEN CLICKED  */
+/* WHEN CLICKED  */
 #toggle.on span {
     background-color: transparent;
 }
@@ -179,14 +186,15 @@ a {
     transform: rotate(-45deg) translate(7px, -8px);
 }
 
-#toggle.on + #navigation-list { /*??*/
+#toggle.on+#navigation-list {
+    /*??*/
     opacity: 1;
     visibility: visible;
 }
 
 /*************************************** HERO SECTION ***************************************/
 
-.hero-container{
+.hero-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,7 +231,7 @@ a {
 }
 
 .heading-name {
-    color:#DBE2EF;
+    color: #DBE2EF;
 }
 
 .button-container {
@@ -267,7 +275,7 @@ a {
     width: 500px;
     height: 200px;
     border-radius: 50%;
-    background-image: linear-gradient( var(--blue), var(--white));
+    background-image: linear-gradient(var(--blue), var(--white));
     z-index: -2;
 }
 
@@ -286,7 +294,7 @@ a {
     color: var(--white);
     display: flex;
     justify-content: center;
-    padding: 1.8rem;
+    padding: 1.2rem;
 }
 
 .projects-grid {
@@ -298,8 +306,8 @@ a {
 }
 
 .project-card {
-    height: 18rem;
-    width: 28rem;
+    height: 17rem;
+    width: 27%;
     border-radius: 10px;
     transition: 2s;
 }
@@ -309,7 +317,7 @@ a {
 }
 
 .project-image {
-    height: 18rem;
+    height: 17rem;
     width: 100%;
     border-radius: 10px;
     object-fit: cover;
@@ -332,7 +340,7 @@ a {
 /* #pdf_content {
     width: 100%;
     height: 80vh; */
-    /* pointer-events: none; */
+/* pointer-events: none; */
 /* } */
 
 /* #pdf.toggle-pdf {
@@ -399,7 +407,7 @@ a {
 .footer-list a {
     text-transform: uppercase;
     text-decoration: none;
-    color:var(--white);
+    color: var(--white);
     margin: 0;
     padding: 1.5rem;
 }
@@ -428,7 +436,7 @@ a {
 
 ::-webkit-scrollbar {
     width: 16px;
-    background-color:var(--dark);
+    background-color: var(--dark);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -495,18 +503,18 @@ a {
 
 
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
 
-    .hero-container{
+    .hero-container {
         flex-direction: column;
     }
 
 }
 
-@media (max-width: 930px){
+@media (max-width: 930px) {
 
     #projects-section {
-        height: 120vh;
+        height: 135vh;
     }
 
     .project-card {
@@ -550,7 +558,7 @@ a {
         top: 5rem;
         right: 0;
         backdrop-filter: blur(40px);
-        -webkit-backdrop-filter :blur(40px);
+        -webkit-backdrop-filter: blur(40px);
         border: 2px solid var(--white);
         opacity: 0;
         visibility: hidden;
