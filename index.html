@@ -252,13 +252,13 @@
 
         <div id="form-container">
             <h2 class="section-title">Let's talk!</h2>
-            <form id="survey-form">
+            <form id="survey-form" action="php/form-handler.php" method="POST">
 
-                <input id="name" type="text" class="input-control" placeholder="Name" required>
+                <input id="name" name="name" type="text" class="input-control" placeholder="Name" required>
 
-                <input id="email" type="email" class="input-control" placeholder="Email" required>
+                <input id="email" name="email" type="email" class="input-control" placeholder="Email" required>
 
-                <textarea placeholder="What's up?" class="input-textarea"></textarea>
+                <textarea name="message" placeholder="What's up?" class="input-textarea"></textarea>
 
                 <button type="submit" class="button">Send</button>
 
