@@ -212,6 +212,10 @@ a {
     color: var(--blue);
 }
 
+.hero-description br {
+    display: none;
+}
+
 .heading-line {
     color: var(--white);
     font-size: 2.5rem;
@@ -506,6 +510,10 @@ a {
 
     .hero-container {
         flex-direction: column;
+    }
+
+    .hero-description br {
+        display: unset;
     }
 
 }
