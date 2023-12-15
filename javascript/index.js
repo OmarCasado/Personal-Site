@@ -51,3 +51,12 @@ hiddenElements.forEach((el) => observer.observe(el));
 scrollAnimation(".hidden", "reveal");
 scrollAnimation(".hiddenAtBottom", "revealFromBottom");
 scrollAnimation(".hiddenAtRight", "revealFromRight");
+
+//////////////////////////////// CURRENT DATE /////////////////////////////////////////
+
+let currentDate = new Date();
+let currentYear = currentDate.getFullYear();
+
+let yearToReplace = document.getElementById("currentYear");
+yearToReplace.textContent = currentYear;
+
